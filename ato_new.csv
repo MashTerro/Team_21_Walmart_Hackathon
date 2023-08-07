@@ -1,0 +1,7 @@
+Session Duration (s),Failed Logins,Usual Location,Time Difference (mins),Usual Device,Current Device,Usual IP,Current IP,Prediction
+2629,8,FALSE,71,Tablet,Tablet,25.251.173.126,5.2.102.139,NON-ATO
+2674,10,TRUE,57,Desktop,Tablet,238.136.242.37,196.44.84.237,ATO
+188,7,TRUE,110,Desktop,Desktop,189.163.207.53,41.230.176.162,NON-ATO
+1287,3,FALSE,59,Tablet,Mobile,137.222.131.40,23.228.106.178,NON-ATO
+2023,5,TRUE,67,Mobile,Desktop,8.44.209.161,236.178.16.14,ATO
+1474,2,TRUE,113,Mobile,Desktop,214.240.62.106,23.246.181.148,NON-ATO

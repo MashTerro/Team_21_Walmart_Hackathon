@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Saved Data</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('https://miro.medium.com/v2/resize:fit:2000/1*M2dT90tDTwIYTQcNPkcmvg.jpeg');
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            width: auto;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 100px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            margin-top: 0;
+            color: rgb(15, 4, 56);
+        }
+
+        .data-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-container h2 {
+            margin-top: 0;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        button {
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        button{
+            color: rgb(250, 244, 244) ;
+            background-color: rgb(18, 18, 122);
+            border-radius: 20px;
+            width: auto;
+        }
+
+        button:hover {
+            background-color: #846ed4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #060304;
+        }
+
+        th,
+        td {
+            border: 1px solid #060304;
+            padding: 8px;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container" ,method="post">
+        <div class="container">
+            <h1>ATO Data Prediction</h1>
+            <table id="savedData">
+                <tr>
+                    <th>Session duration</th>
+                    <th>Failed Login</th>
+                    <th>usual Location</th>
+                    <th>Time diff</th>
+                    <th>usual Device</th>
+                    <th>Current Device</th>
+                    <th>usual IP</th>
+                    <th>current IP</th>
+                    <th>prediction</th>
+                </tr>
+                {% for data1 in saved_data %}
+                <tr>
+                    <td>{{ data1[0] }}</td>
+                    <td>{{ data1[1] }}</td>
+                    <td>{{ data1[2] }}</td>
+                    <td>{{ data1[3] }}</td>
+                    <td>{{ data1[4] }}</td>
+                    <td>{{ data1[5] }}</td>
+                    <td>{{ data1[6] }}</td>
+                    <td>{{ data1[7] }}</td>
+                    <td>{{ data1[8] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+
+</html>
